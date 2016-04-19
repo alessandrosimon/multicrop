@@ -9,10 +9,22 @@ MainWindow::MainWindow(QWidget *parent) :
     graphicsPixmap(new QGraphicsPixmapItem)
 {
     ui->setupUi(this);
+    setWindowTitle("multicrop");
+
+    // set up default welcome screen
+    scene->addText("Please load an image.");
+    ui->mainView->setScene(scene);
+    ui->mainView->setCacheMode(QGraphicsView::CacheNone);
+
+    // TODO connect slots and signals
+
 }
 
 MainWindow::~MainWindow()
 {
+    delete rawImage;
+    delete graphicsPixmap;
+    delete scene;
     delete ui;
 }
 

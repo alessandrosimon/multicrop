@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>507</width>
-    <height>338</height>
+    <height>431</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,15 +16,81 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
-     <widget class="QGraphicsView" name="graphicsView"/>
+     <widget class="QGraphicsView" name="mainView"/>
     </item>
     <item row="0" column="1">
      <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="0">
-       <widget class="QPushButton" name="pushButton">
+      <item row="3" column="0">
+       <widget class="QPushButton" name="openPictureButton">
         <property name="text">
-         <string>PushButton</string>
+         <string>Open Picture</string>
         </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="title">
+         <string>Zooming</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="1" column="0">
+          <widget class="QPushButton" name="zoomOutButton">
+           <property name="text">
+            <string>Zoom Out</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="zoomInButton">
+           <property name="text">
+            <string>Zoom In</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="createWallButton">
+        <property name="text">
+         <string>Create Wallpaper</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string>Overlays</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="3" column="0">
+          <widget class="QPushButton" name="deleteOverButton">
+           <property name="text">
+            <string>Delete All</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="createOverButton">
+           <property name="text">
+            <string>Create Overlay</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </item>
      </layout>
